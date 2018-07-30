@@ -1,0 +1,6 @@
+.tmp/
+coverage/
+dist/
+node_modules/
+test-result/
+errorShots/

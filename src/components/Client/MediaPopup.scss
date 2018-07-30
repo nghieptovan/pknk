@@ -1,0 +1,340 @@
+.custom_after-open-instagram-media{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: none;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    // padding: 10px 5px;
+    padding: 0px;
+    width:  80%;
+    height: 90%;
+    min-height: 300px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .main{
+        position: unset !important;
+    }
+    .container-fluid{ 
+        padding-left: 70px;
+        padding-right: 50px;         
+        .pull-left{           
+            color: red !important;
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            .error-left{               
+                margin-top: -3px;
+            }
+            .success{
+                color: #107c20 ;               
+                margin-top: -3px;
+            }
+        }
+        .error{
+            color: #e15c26;
+            font-weight: 400;
+            font-size: 11px;
+            margin-top: -3px;
+        }
+        .title{
+            height: 21px;	
+            color: #212121;	
+            font-size: 19px;	
+            font-weight: 500;	
+            line-height: 21px;
+            margin: 30px 0px;	
+            padding-left: 0px;
+            .title-tag{
+                width: 75%;
+                float: right;
+                font-size: 15px;
+                font-weight: 600;
+                color: #f3652b;
+                cursor: pointer;
+            }
+            
+        }  
+        .title-arrow{
+            i{
+                color: black;
+                position: absolute;
+                left: 25px;
+                font-size: 21px;                   
+                top: 28px;
+                -webkit-text-stroke: 2px white;
+                cursor: pointer;
+            }
+        }
+        .header{
+            .iconDate{
+                display: none;  
+            }
+            .btn-search{
+                background: #e15c26;
+                border: none;
+                padding: 7px 20px;
+                cursor: pointer;
+                color: white;           
+                position: absolute;
+            }
+        }
+        .date-search{
+            .header{
+                label{
+                    position: absolute;
+                    top: 10px;
+                    color: #313131;
+                    font-size: 12px;
+                    font-weight: 100;
+                }
+            }
+            form{
+                margin: 0px;
+            }
+            input{
+                text-align: right;
+                font-size: 12px;
+                height: 27px;
+                color: #313131;
+            }
+            .react-datepicker-popper{
+                width: 200px;
+                z-index: 999;
+                top: 35px !important;
+                left: -90px !important;
+                transform: none !important;
+                will-change: unset !important;
+            }
+        }
+        .import-select{
+            padding-right: 0px;
+            .checkbox-all{
+                height: 37px;
+                line-height: 37px;
+                padding: 0px;
+                input{
+                    width: auto;
+                    position: absolute;
+                    right: 120px;
+                    margin: 0;
+                }
+                span{
+                    color: #313131;
+                    position: absolute;
+                    right: 0;
+                    line-height: 12px;
+                    font-size: 12px;
+                    width: auto;
+                }
+            }
+        
+            .btn-import{
+                background: #e15c26;
+                border: none;
+                padding: 0px 20px;
+                height: 30px;
+            }        
+        }
+        .hashtags{
+            padding-left: 0px;
+            .save-btn{
+                position: absolute;
+                top: 10px;
+                right: 16px;
+                font-size: 13px;
+                color: #f3652b;
+                font-weight: 400;
+                cursor: pointer;
+            }            
+            input{
+                font-size: 12px;
+                height: 27px;
+                color: #313131;
+            } 
+        }
+        .hashtags-list::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            display: none;
+        }
+
+        .hashtags-list::-webkit-scrollbar
+        {
+            width: 7px;
+            background-color: transparent;
+        }
+        .hashtags-list::-webkit-scrollbar-thumb
+        {            
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #E15B28;
+        }
+        .hashtags-list{
+            max-height: 66px;
+            overflow: auto;
+            padding: 0;
+            .media-tag{
+                position: relative;                
+            }
+            .react-tagsinput-tag{
+                position: relative;
+                background-color: #dad8d8;
+                color: #1d1c1c;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 10px;
+                padding-right: 20px;
+                .delete-hashtag{                    
+                    position: absolute;
+                    top: 0;
+                    line-height: 14px; 
+                    right: 5px;
+                }
+            }
+            .selected{
+                background-color: #129cf3;
+                color: #fff;
+            }
+            .hashtag-title{
+                color: #000;
+                font-size: 15px;
+                font-weight: 500;
+                margin-right: 10px;
+            }                  
+        }
+        .media-body{
+            .media-list{
+                margin-top: 10px;
+                .list-img{
+                    .image_list{
+                        padding-right: 10px;
+                        padding-left: 0px;
+                        margin-bottom: 10px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        background: #151925;
+                    }
+                    input{                  
+                        position: absolute;
+                        left: 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .no-media{               
+                        color: black;    
+                        margin-left: 15px;
+                    }
+                    .image-thumb{
+                        .instagram-block{
+                            width: 15px;
+                            height: 15px;
+                            position: absolute;
+                            right: 5px;
+                            top: 2px;
+                            img{
+                                background: transparent;
+                            }
+                        }
+                        &:hover{
+                            background-color: #999999;
+                            cursor: pointer;
+                        }
+                        .video-icon{
+                            position: absolute;
+                            border: 1px solid #000;
+                            width: 24px;
+                            height: 24px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #000;
+                            padding: 3px 5px;
+                            left: calc(50% - 12px);
+                            bottom: 50px;
+                            z-index: 999;
+                            i{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+            .tag-list{
+                margin-top: 30px;
+                .react-tagsinput-tag{
+                    background-color: #e1dfdf;
+                    color: #000000;
+                    border: none;
+                    padding-right: 20px;
+                    padding: 8px 15px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    margin-right: 15px;
+                    .delete-hashtag{
+                        display: none;
+                    }                   
+                }   
+                .react-tagsinput-tag:hover{
+                    background-color: #E15B28;  
+                    color: #ffffff;                 
+                } 
+                .not-found{
+                    color: #000;
+                }  
+            }
+        }
+        .media-footer{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            line-height: 50px;
+            height: 50px;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            padding: 0px;
+            z-index: 999;
+            button{
+                position: absolute;
+                right: 25px;
+                margin: 10px 0px;
+                padding: 0px 20px;
+                height: 30px;
+                line-height: 30px;
+                background: #E15B28;
+                border: none;
+                z-index: 100;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .container-fluid{
+            .title{
+                margin-bottom: 15px;
+            }
+            .hashtags{
+                padding-right: 0px;
+            }
+            .date-search{
+                padding: 0px;
+                .col-md-6{
+                    padding-right: 0px;
+                }
+            }
+            .import-select{
+                .row{
+                    display: flex;
+                    .col-md-6{
+                        width: 50%;
+                    }
+                }
+            }
+            .col-md-6{
+                height: 37px;
+            }
+        }
+    }
+} 
