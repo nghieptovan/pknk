@@ -21,7 +21,6 @@ import { Link } from 'react-router';
 import logoImg from '../../assets/logologin.png';
 import defaultshoe from '../../assets/img/no-img.png';
 import imgItem from '../../assets/img/no-img.png';
-import OwlCarousel from 'react-owl-carousel';
 import DataMap2 from '../../utils/config';
 import './ChallengesList.scss';
 import ReactStars from 'react-stars';

@@ -23,7 +23,6 @@ import {s3URL} from '../../config';
 import hospital from '../../assets/hospital.png';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
-
 const validate = values => {
   return validateWidgetForm(values, false);
 };
@@ -32,7 +31,7 @@ const selector = formValueSelector('widget');
 
 @connect(
   state => ({
-    dashboard: state.dashboard,
+    routing: state.routing,
     form: state.form,
     fields: selector(state, 'firstName', 'description', 'lastName', 'email', 'hashTags')
   }),
@@ -47,7 +46,16 @@ export default class Dashboard extends Component {
     
   }
   componentWillMount(){
-    this.props.getBill();
+    // this.props.getBill();
+    console.log(browserHistory);
+    console.log(this.props);
+    
+    
+    // browserHistory.push('/challenge');
+
+  }
+  changePage = () => {
+    this.props.router.push('/challenge');
   }
   
   render() {   
@@ -62,7 +70,7 @@ export default class Dashboard extends Component {
           <form className="login-form">            
             <TextField name="username" fullWidth={true} floatingLabelText="Username" type="text" />
             <TextField name="password" fullWidth={true} floatingLabelText="Password" type="password"/>
-            <FlatButton type="submit" className="login-button" label="Login" fullWidth={true} />
+            <FlatButton type="submit" className="login-button" label="Login" fullWidth={true} onClick={this.changePage} />
           </form>
         </div>
       </div>

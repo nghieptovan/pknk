@@ -20,7 +20,6 @@ const rootReducer = combineReducers({
   admin,
   content,
   reviewers,
-  routing: routerReducer,
   dashboard,
   widget,
   fileclients
